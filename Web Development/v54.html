@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Prompt & Confirm</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+        // alert("This is a message");
+
+        // let name = prompt("What is your name?", "Default");
+        // console.log(name);
+
+        let deletePost = confirm("Do you really want to delete this post?");
+        if(deletePost){
+            console.log("Your post has been deleted");
+        }
+        else{
+            console.log("Your post has not been deleted");
+        }
+
+
+
+        // let age = prompt("Enter your age:");
+        // if(age<18){
+        //     console.log("You are not allowed to access this website");
+        // }
+        // else{
+        //     console.log("You can access this website");
+        // }
+    </script>
+</body>
+</html>

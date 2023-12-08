@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        let time = new Date();
+        console.log(time);
+        
+        let yr = time.getFullYear();
+        console.log(`The year is ${yr}`);
+
+        time.setDate(29);
+        console.log(time);
+
+        
+        // let date1 = new Date('2005-03-14');
+        // console.log(date1);
+
+        // let date2 = new Date(2020,3,14,9,35,50,80);
+        // console.log(date2);
+
+    </script>
+</body>
+</html>

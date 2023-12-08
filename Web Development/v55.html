@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Loops</h2>
+    </div>
+    <script>
+        let i = 0;
+
+        let arr = ['item1','item2','item3'];
+
+        let student = {
+            name:"Haroon",
+            age:18,
+            year:2
+        }
+
+        // for(i=0;i<3;i++){
+        //     console.log(i+1);
+        // }
+
+        // while(i<3){
+        //     console.log(`Value of i is ${i}`);
+        //     i++;
+        // }
+
+        // do{
+        //     console.log(`${i} is less than 3`);
+        //     i++;
+        // }while(i<3);
+
+        // for(i=0; i<arr.length; i++){
+        //     console.log(`This is ${arr[i]}`);
+        // }
+
+        // arr.forEach(function (element){
+        //     console.log(`This is ${element}`);
+        // });
+
+        // for(element of arr){
+        //     console.log(`This is ${element}`);
+        // }
+ 
+        for(key in student){
+            console.log(`The ${key} of student is ${student[key]}`);
+        }
+    </script>
+</body>
+</html>

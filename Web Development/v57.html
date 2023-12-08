@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #btn{
+            background-color: rgb(196, 168, 227);
+            border-radius: 5px;
+            padding: 5px 10px;
+            border: 2px solid rgb(240, 23, 23);
+            cursor: pointer;
+        }
+        #para{
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            padding: 2px;
+            border-radius: 5px;
+        }
+        #head{
+            width: 260px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id ="head">This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil, animi accusantium ex nemo, ducimus quaerat perspiciatis tempore atque optio itaque a ipsum dolorum possimus aliquam magnam corporis. Nulla incidunt reiciendis magni, perspiciatis temporibus ratione quae quo eius porro quod ut natus cumque consequatur doloremque est soluta laboriosam, facilis quam ipsa? Labore quod sit ipsa reiciendis debitis sapiente exercitationem quidem accusantium eum, asperiores omnis vel, fugiat temporibus doloremque assumenda unde ad possimus molestias earum eaque id! Consectetur, eos quisquam laborum libero ipsum quidem perspiciatis nihil hic non reiciendis culpa sint! Quia harum fugit iure error. Eligendi praesentium accusamus officia, molestias magni mollitia? Nihil alias porro officia facere ipsam! Suscipit iste doloribus odit neque. Enim, debitis ratione reiciendis pariatur ea tempora corporis? Minima consequatur accusantium nulla totam reiciendis nostrum commodi accusamus. Rerum magnam et quaerat illo eveniet debitis totam facere tempora, ut ducimus cumque iste assumenda dolore minima provident quae! Iste natus explicabo porro magnam harum nemo assumenda! Id doloremque eos quae illum necessitatibus voluptatibus rem ut itaque excepturi distinctio esse labore repudiandae quos molestiae officiis maiores natus repellendus perferendis fugit eveniet perspiciatis pariatur, ad vel? Id ullam, perferendis et sequi facere temporibus? Aliquid eveniet ipsum similique. Laborum eius fugiat culpa.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+        head = document.getElementById('head');
+        head.addEventListener('mouseover', function(){
+            head.style.border = '2px solid red';
+        });
+        head.addEventListener('mouseout', function(){
+            head.style.border = 'none';
+        });
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function (){
+                console.log("Mouse Inside");
+        });
+
+        // let btn = document.getElementById('btn');
+        // btn.addEventListener('click', function(){
+        //     para.style.display = 'none';
+        // });
+
+        function toggleHide(){
+            let para = document.getElementById('para');
+            if(para.style.display == 'none'){
+                para.style.display = 'block';
+            }
+            else{
+                para.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

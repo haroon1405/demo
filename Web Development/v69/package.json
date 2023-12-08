@@ -1,0 +1,21 @@
+{
+  "name": "v69",
+  "version": "1.0.0",
+  "description": "Demo Package",
+  "main": "v69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Awesome"
+  ],
+  "author": "Haroon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "slugify": "^1.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

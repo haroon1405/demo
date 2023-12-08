@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        :root{
+            --border_color:red;
+            --border_size:2px;
+            --container_color: aqua;
+        }
+
+        .container{
+            max-width: 700px;
+            margin: auto;
+            background-color: var(--container_color);
+            display: flex;
+            border: var(--border_size) solid var(--border_color);
+            justify-content: center;
+        }
+
+        .box{
+            --box_color: violet;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box_color);
+            border: var(--border_size) solid var(--border_color);
+            margin: 2px 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

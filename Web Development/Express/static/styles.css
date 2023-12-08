@@ -1,0 +1,68 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background-color: grey;
+    padding: 3px 12px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+    padding: 3px 24px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.container{
+    margin: 12px auto;
+    max-width: 70%;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;  
+    position: fixed;  
+    background: url('/static/Gym.jpeg') no-repeat center center;
+    background-size: cover;  
+}
+
+input, textarea{
+    display: block;
+    padding: 2px;
+    margin: 15px auto;
+    width: 60%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn{
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}

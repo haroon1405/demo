@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids-Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+
+        .item{
+            background-color: greenyellow;
+            border: 2px solid black;
+        }
+
+        #navbar{
+            grid-area: navbar;
+        }
+
+        #section{
+            grid-area: section;
+        }
+
+        #aside{
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint exercitationem quae doloribus sequi iure consequuntur et inventore assumenda nesciunt nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At qui quos commodi eos magni deserunt debitis exercitationem reprehenderit tenetur incidunt. Numquam explicabo esse, qui quos quod facere? Labore voluptatum beatae autem cupiditate quas eaque earum voluptatibus laborum quis vitae? Magnam, labore earum. Temporibus modi possimus veniam, voluptatem architecto ipsam delectus.
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic optio animi dolorem molestias voluptatibus architecto facilis temporibus nam asperiores provident. Debitis molestiae aliquid est velit, similique culpa. Earum, eveniet dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint obcaecati odit eaque? Itaque provident officia temporibus quo sint illo? Eos, omnis? Facere blanditiis nisi quas distinctio architecto iure harum at aliquid corporis exercitationem quaerat, veniam mollitia quibusdam sit reiciendis dignissimos temporibus consequuntur odit rem voluptas eum! Incidunt provident debitis commodi. Pariatur, modi repellendus! Repellendus eligendi facilis vel nemo dignissimos, illo ipsam quod iure accusamus eaque qui non suscipit quis illum adipisci fugit doloremque cupiditate, vero inventore libero nostrum. Dolorem sequi voluptatum dignissimos quam nostrum aperiam deleniti est nesciunt fugit in. At modi aspernatur eligendi ipsum ducimus, officiis omnis accusantium impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, cumque! Minus repellat, earum nemo neque fugiat eveniet repudiandae reprehenderit saepe, delectus hic, maiores assumenda cupiditate eius ipsam? Itaque at, a, iste culpa incidunt delectus consectetur placeat saepe laboriosam iusto natus quia repudiandae soluta velit autem temporibus possimus corporis illo aut?
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum esse perspiciatis temporibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo sunt commodi necessitatibus quasi tempora laudantium autem veritatis placeat non rem alias sit ipsam nobis, quam explicabo! Facere ea assumenda, corrupti reprehenderit sequi sed error ab id tempore sapiente totam delectus voluptas ut omnis aut dolorem vero esse ipsa quasi harum fugiat natus amet quos. Magnam vel sit provident autem quos quam architecto debitis expedita ut eius quibusdam illum recusandae perspiciatis dolore ullam delectus iste fuga numquam, est sequi adipisci enim. Fugit, sapiente necessitatibus cum aspernatur recusandae soluta sed facere accusantium consectetur iste. Culpa in odit maxime fugiat minima neque quam.
+        </div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ullam reiciendis quos dicta rem id blanditiis officiis cumque maiores doloremque? Mollitia, numquam. Quae nulla non esse ea, dolor eligendi quidem deleniti quod a. Assumenda reiciendis earum omnis, dolor quod autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed sunt numquam, perferendis modi ipsam ea. Laudantium nulla fuga delectus est.
+        </footer>
+    </div>
+</body>
+</html>

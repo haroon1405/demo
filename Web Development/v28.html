@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            /* flex-flow: row wrap; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 1; */
+            flex-basis: 250px;
+            /* flex: 2 3 240px; */
+            /* align-self: center; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Tutorial</h1>
+    <div class="container">
+        <div id="item-1" class="item">First Box</div>
+        <div id="item-2" class="item">Second Box</div>
+        <div id="item-3" class="item">Third Box</div>
+        <div id="item-4" class="item">Fourth Box</div>
+        <div id="item-5" class="item">Fifth Box</div>
+        <div id="item-6" class="item">Sixth Box</div>
+    </div>
+</body>
+</html>
